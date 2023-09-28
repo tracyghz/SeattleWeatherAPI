@@ -3,9 +3,9 @@
 ## Summary
 
 Flask web app that implements APIs to return Seattle weather data. It's currently supporting 4 use cases:
-1. `get-all` that returns all data available. E.g. `curl 'http://localhost:443/get-all'`
-2. `query?date={DATE}` to query by date in `yyyy-mm-dd`. E.g. `curl 'http://localhost:443/query?date=2012-01-01'`
-3. `query?weather={WEATHER}` to query by weather. E.g. `curl 'http://localhost:443/query?weather=sun'`
+1. `/get-all` that returns all data available. E.g. `curl 'http://localhost:443/get-all'`
+2. `/query?date={DATE}` to query by date in `yyyy-mm-dd`. E.g. `curl 'http://localhost:443/query?date=2012-01-01'`
+3. `/query?weather={WEATHER}` to query by weather. E.g. `curl 'http://localhost:443/query?weather=sun'`
 4. Multi-query filtering. E.g. `curl 'http://localhost:443/query?weather=rain&limit=5'`
 
 ## Setup Guide
