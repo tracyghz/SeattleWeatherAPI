@@ -24,16 +24,15 @@ Flask web app that implements APIs to return Seattle weather data. It's currentl
    * Running on http://127.0.0.1:5000
   Press CTRL+C to quit
   ```
-3. Make sure the app works by running some APIs in summary section. You may also run the automated test via `python test_seattle_weather_api.py`
-4. Press CTRL+C to quit flask app and start docker desktop. You need to have docker daemon running before running this app as a container
-5. Build docker image. Run `docker build -t sea-weather-api-image:v0 .`
-6. Run your docker image in a container. Run `docker run -p 443:8080 sea-weather-api-image:v0`. You need to be able to see something similar to this:
+3. Press CTRL+C to quit flask app. Start docker desktop. You need to have docker daemon running before running this app as a container
+4. Build docker image. Run `docker build -t sea-weather-api-image:v0 .`
+5. Run your docker image in a container. Run `docker run -p 443:8080 sea-weather-api-image:v0`. You need to be able to see something similar to this:
   ```
   ➜  seattleWeatherAPI git:(main) ✗ docker ps
   CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS          PORTS                            NAMES
   d8717ebc93de   sea-weather-api-image:v9   "python -m flask run…"   54 minutes ago   Up 54 minutes   443/tcp, 0.0.0.0:443->8080/tcp   pedantic_raman
   ```
-7. Make sure the app works by running some APIs in summary section. You may also run the automated test via `python test_seattle_weather_api.py`. You should see something like this:
+6. Make sure the app works by running some APIs in summary section. You may also run the automated test via `python test_seattle_weather_api.py`. You should see something like this:
 
    ```
     ➜  seattleWeatherAPI git:(main) ✗ python test_seattle_weather_api.py
